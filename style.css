@@ -69,7 +69,7 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(2px 2px 8px #0006);
-    width: 220px;
+    width: 180px;
 }
 
 footer{
@@ -81,37 +81,75 @@ footer{
 
 .mapa-image{
     width: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
-@media (max-width:768px){
+
+@media (max-width: 900px) and (orientation: portrait){
+    header{
+        padding-bottom: 10px;
+    }
+
     header nav{
         margin-left: 25px;
     }
 
-    main{
-        display: flex;
-        align-items: flex-end;
-        word-wrap: break-word;
-    }
-
     h2{
+        position: absolute;
         transform: translateX(0);
         top: 80px;
-        font-size: 3.7vh;
+        font-size: 2rem;
         width: 150px;
         text-align: center;
-        margin: 1vw 0px;
-       
+        margin:0px; 
        
     }
 
     .garrafa-coca-cola{
-        height: 60vh;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height:60vh;
         width:auto;
     }
 
-    footer{
-        height: 60px;
+     footer{
+        height: 10vh;
+        width: auto;
         margin-right: 25px;
     }
+
+}
+
+@media (max-width: 900px) and (orientation:landscape){
+    header nav{
+        margin-left: 25px;
+    }
+
+    h2{
+        position: absolute;
+        transform: translateX(0);
+        top: 20px;
+        font-size: clamp(1rem, 3vw, 2rem);
+        width: 150px;
+        text-align: center;
+        margin:0px; 
+       
+    }
+
+    .garrafa-coca-cola{
+        height:35vw;
+        width:auto;
+        margin-top: 10vh;
+        
+    }
+
+     footer{
+        height: 5vh;
+        width: auto;
+        margin-right: 25px;
+    }
+
 }
