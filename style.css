@@ -16,11 +16,17 @@ header{
     display: flex;
     height: 100px;
 }
+
 header nav{
     height: 100%;
     display: flex;
     align-items: center;
     margin: 15px 70px;
+}
+
+header nav:hover{
+    cursor: pointer;
+
 }
 
 .menu-hamburger{
@@ -69,7 +75,7 @@ h2{
     left: 50%;
     transform: translate(-50%, -50%);
     filter: drop-shadow(2px 2px 8px #0006);
-    width: 180px;
+    width: 130px;
 }
 
 footer{
@@ -111,7 +117,7 @@ footer{
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        height:60vh;
+        height:40vh;
         width:auto;
     }
 
@@ -140,7 +146,7 @@ footer{
     }
 
     .garrafa-coca-cola{
-        height:35vw;
+        height:30vw;
         width:auto;
         margin-top: 10vh;
         
